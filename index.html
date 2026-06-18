@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 7th Birthday Aulia</title>
+    <meta name="theme-color" content="#c75cff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="lock-scroll">
+
+    <!-- ===================== -->
+    <!-- LOADING SCREEN -->
+    <!-- ===================== -->
+    <div id="loader">
+        <div class="loader-box">
+            <img src="assets/images/kuromi.jpg" alt="Kuromi" class="loader-image">
+            <h1>🎀 Happy Birthday Aulia 🎀</h1>
+            <p>Loading Special Party...</p>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- GLITTER -->
+    <!-- ===================== -->
+    <div id="glitter-container"></div>
+
+    <!-- ===================== -->
+    <!-- HEARTS -->
+    <!-- ===================== -->
+    <div id="heart-container"></div>
+
+    <!-- ===================== -->
+    <!-- MUSIC -->
+    <!-- ===================== -->
+    <audio id="birthdayMusic" loop>
+        <source src="assets/music/lagu_ultah.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- ===================== -->
+    <!-- ENVELOPE SCREEN -->
+    <!-- ===================== -->
+    <div id="envelopeScreen">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <h3>💌 Undangan Ulang Tahun 💌</h3>
+                    <h1>Aulia</h1>
+
+                    <!-- KODE UNTUK NAMA TAMU -->
+                    <p style="margin-top: 20px; font-size: 16px; margin-bottom: 5px;">Kepada Yth. Bapak/Ibu/Saudara/i:</p>
+                    <h2 id="nama-tamu" style="font-size: 24px; color: #ff69b4; margin-top: 5px; margin-bottom: 20px; font-weight: bold;">Nama Tamu</h2>
+                    <p>Tap tombol di bawah untuk membuka undangan</p>
+
+                    <button id="openInvitationBtn">
+                        🎀 Buka Undangan 🎀
+                    </button>
+                </div> <!-- /letter -->
+            </div> <!-- /envelope -->
+        </div> <!-- /envelope-wrapper -->
+    </div> <!-- /envelopeScreen -->
+
+    <!-- ===================== -->
+    <!-- HERO -->
+    <!-- ===================== -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>🎀 Happy 7th Birthday 🎀</h1>
+            <h2>Olivia Filsa Fitria Badjoda</h2>
+            <h3>(Aulia)</h3>
+            <p>Turning 7 Years Old 🎂</p>
+            <a href="#about" class="hero-btn">
+                💜 Lihat Undangan
+            </a>
+        </div>
+    </section>
+
+    <!-- ===================== -->
+    <!-- ABOUT -->
+    <!-- ===================== -->
+    <section id="about">
+        <div class="glass-card reveal">
+            <h1>💜 About Aulia 💜</h1>
+            <p>Hai, aku Aulia 🩷</p>
+            <p>Tahun ini aku genap berusia 7 tahun 🎂✨</p>
+            <p>Yuk datang ke pesta ulang tahunku dan rayakan hari spesial ini bersama keluarga dan sahabat tercinta.</p>
+        </div>
+    </section>
+
+    <!-- ===================== -->
+    <!-- COUNTDOWN -->
+    <!-- ===================== -->
+    <section>
+        <div class="glass-card reveal">
+            <h1>⏳ Countdown</h1>
+            <div id="countdown">
+                <div class="time-box">
+                    <span id="days">0</span>
+                    <small>Hari</small>
+                </div>
+                <div class="time-box">
+                    <span id="hours">0</span>
+                    <small>Jam</small>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">0</span>
+                    <small>Menit</small>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">0</span>
+                    <small>Detik</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== -->
+    <!-- EVENT -->
+    <!-- ===================== -->
+    <section>
+        <div class="glass-card reveal">
+            <h1>📅 Event</h1>
+            <p>Minggu, 21 Juni 2026</p>
+            <p>Pukul 15.00 WITA</p>
+            <p>Jln. Awara Karya</p>
+            <p>Samping Kantor SSI Gorontalo</p>
+        </div>
+    </section>
+
+    <!-- ===================== -->
+    <!-- GALLERY -->
+    <!-- ===================== -->
+    <section>
+        <div class="glass-card reveal">
+            <h1>📸 Gallery</h1>
+            <div class="slider-container">
+                <div class="slider" id="slider">
+                    <img src="assets/images/Foto_Aulia1.jpg" class="slide" alt="Aulia 1">
+                    <img src="assets/images/Foto_Aulia2.jpg" class="slide" alt="Aulia 2">
+                    <img src="assets/images/Foto_Aulia3.jpg" class="slide" alt="Aulia 3">
+                    <img src="assets/images/Foto_aulia4.jpg" class="slide" alt="Aulia 4">
+                    <img src="assets/images/Foto_Aulia5.jpg" class="slide" alt="Aulia 5">
+                    <img src="assets/images/Aulia.jpg" class="slide" alt="Aulia">
+                </div>
+            </div>
+            <div class="slider-buttons">
+                <button id="prevBtn">⬅</button>
+                <button id="nextBtn">➡</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== -->
+    <!-- FULLSCREEN -->
+    <!-- ===================== -->
+    <div id="fullscreenViewer">
+        <span id="closeFullscreen">&times;</span>
+        <img id="fullscreenImage">
+    </div>
+
+    <!-- ===================== -->
+    <!-- LOCATION -->
+    <!-- ===================== -->
+    <section>
+        <div class="glass-card reveal">
+            <h1>📍 Lokasi Acara</h1>
+            <p>Jln. Awara Karya</p>
+            <p>Samping Kantor SSI Gorontalo</p>
+            <a class="maps-btn" target="_blank" href="https://www.google.com/maps?q=0.564067,123.054675">
+                📍 Buka Google Maps
+            </a>
+        </div>
+    </section>
+
+    <!-- ===================== -->
+    <!-- MUSIC CONTROL -->
+    <!-- ===================== -->
+    <div id="musicControl">
+        <button id="musicBtn">🎵 Pause Music</button>
+    </div>
+
+    <!-- ===================== -->
+    <!-- FOOTER -->
+    <!-- ===================== -->
+    <footer>
+        <h1>💕 Thank You 💕</h1>
+        <p>Terima kasih atas doa dan kehadiran keluarga serta sahabat tercinta.</p>
+        <h2>See You At The Party!</h2>
+        <h2>🎀 Happy 7th Birthday 🎀</h2>
+        <h3>Olivia Filsa Fitria Badjoda (Aulia)</h3>
+    </footer>
+
+    <!-- Memanggil script dari folder utama -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
